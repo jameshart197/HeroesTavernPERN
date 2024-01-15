@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "UserDatabase",
+            "connectString": "postgres://xhecwpbq:mbCDnLFxTfokPQhblG9dQJuML6EOF6ua@tyke.db.elephantsql.com/xhecwpbq"
+        }
+    ]
+}
