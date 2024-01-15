@@ -6,19 +6,21 @@ export interface usersAttributes {
   id: number;
   username: string;
   role?: string;
-  created_at?: Date;
+  date_created?: Date;
+  password?: string;
 }
 
 export type usersPk = "id";
 export type usersId = users[usersPk];
-export type usersOptionalAttributes = "role" | "created_at";
+export type usersOptionalAttributes = "role" | "date_created" | "password";
 export type usersCreationAttributes = Optional<usersAttributes, usersOptionalAttributes>;
 
 export class users extends Model<usersAttributes, usersCreationAttributes> implements usersAttributes {
   id!: number;
   username!: string;
   role?: string;
-  created_at?: Date;
+  date_created?: Date;
+  password?: string;
 
   // users hasMany characters via user_id
   characters!: characters[];
@@ -50,12 +52,21 @@ export class users extends Model<usersAttributes, usersCreationAttributes> imple
     role: {
       type: DataTypes.STRING,
       allowNull: true
+    },
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: true,
+      defaultValue: Sequelize.Sequelize.fn('now')
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   }, {
     sequelize,
     tableName: 'users',
     schema: 'public',
-    timestamps: true,
+    timestamps: false,
     indexes: [
       {
         name: "users_pkey",

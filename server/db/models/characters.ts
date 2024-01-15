@@ -6,20 +6,20 @@ export interface charactersAttributes {
   id: number;
   name: string;
   user_id?: number;
-  created_at?: Date;
+  date_created?: Date;
   mongo_id?: string;
 }
 
 export type charactersPk = "id";
 export type charactersId = characters[charactersPk];
-export type charactersOptionalAttributes = "user_id" | "created_at" | "mongo_id";
+export type charactersOptionalAttributes = "user_id" | "date_created" | "mongo_id";
 export type charactersCreationAttributes = Optional<charactersAttributes, charactersOptionalAttributes>;
 
 export class characters extends Model<charactersAttributes, charactersCreationAttributes> implements charactersAttributes {
   id!: number;
   name!: string;
   user_id?: number;
-  created_at?: Date;
+  date_created?: Date;
   mongo_id?: string;
 
   // characters belongsTo users via user_id
@@ -49,6 +49,11 @@ export class characters extends Model<charactersAttributes, charactersCreationAt
         key: 'id'
       }
     },
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: true,
+      defaultValue: Sequelize.Sequelize.fn('now')
+    },
     mongo_id: {
       type: DataTypes.STRING,
       allowNull: true
@@ -57,7 +62,7 @@ export class characters extends Model<charactersAttributes, charactersCreationAt
     sequelize,
     tableName: 'characters',
     schema: 'public',
-    timestamps: true,
+    timestamps: false,
     indexes: [
       {
         name: "characters_pkey",
