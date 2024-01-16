@@ -1,21 +1,14 @@
 import dotenv from 'dotenv';
 import express from 'express';
-import { Sequelize } from 'sequelize';
-import { initModels, users } from '../db/models/init-models';
+import {users} from "../db/models/init-models";
+import { sqlconnect } from './db/postgres';
+import { mongoconnect } from './db/mongo';
 const app = express();
 const port = 3000;
 
 dotenv.config();
-const USER_DATABASE = new Sequelize(process.env.POSTGRES_URL as string, {
-    pool:{
-        max:3,
-        min:0,
-        acquire:30000,
-        idle:10000
-    }
-});
-
-initModels(USER_DATABASE);
+sqlconnect();
+mongoconnect().catch(console.dir);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
