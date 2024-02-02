@@ -10,6 +10,7 @@ import SkillProficiency from "./skillproficiency";
 import Spell from "./spell";
 import Subclass from "./subclass";
 import Subrace from "./subrace";
+import ToolProficiency from "./toolproficiency";
 
 
 export default interface Character{
@@ -41,5 +42,6 @@ export default interface Character{
     saving_throw_proficiencies: SavingThrowProficiency[];
     spells: Spell[];
     languages: Language[];
+    tool_proficiencies: ToolProficiency;
     features_and_traits: any[];
 }
