@@ -4,5 +4,5 @@ export default interface Race {
     name: string;
     shortdescription: string;
     fulldescription: string;
-    features: Feature;
+    features: Feature[];
 }
