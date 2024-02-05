@@ -1,0 +1,126 @@
+[
+    {
+        "name": "Elvish",
+        "full_description": "You can speak Elvish, the native tongue of the Elves"
+    },
+    {
+        "name": "Common",
+        "full_description": "Most commonly spoken by Humans, most races can speak this"
+    },
+    {
+        "name": "Dwarvish",
+        "full_description": "Commonly spoken by Dwarves"
+    },
+    {
+        "name": "Giant",
+        "full_description": "Commonly spoken by Giants, Ogres, Firbolgs and Goliaths"
+    },
+    {
+        "name": "Gnommish",
+        "full_description": "Commonly spoken by Gnomes"
+    },
+    {
+        "name": "Goblin",
+        "full_description": "Commonly spoken by goblin and goblinkind (Bugbears, hobgoblins, etc)"
+    },
+    {
+        "name": "Halfling",
+        "full_description": "Commonly spoken by Halflings"
+    },
+    {
+        "name": "Orc",
+        "full_description": "Commonly spoken by Orcs"
+    },
+    {
+        "name": "Leonin",
+        "full_description": "Therosian script, usually spoken by Leonin"
+    },
+    {
+        "name": "Kraul",
+        "full_description": "Commonly spoken by Kraul"
+    },
+    {
+        "name": "Loxodon",
+        "full_description": "Commonly spoken by Loxodons"
+    },
+    {
+        "name": "Merfolk",
+        "full_description": "Commonly spoken by Merfolk and other sea creatures"
+    },
+    {
+        "name": "Minotaur",
+        "full_description": "Commonly spoken by Minotaurs"
+    },
+    {
+        "name": "Vedalken",
+        "full_description": "Commonly spoken by Vedalken"
+    },
+    {
+        "name": "Abyssal",
+        "full_description": "Commonly spoken by Demons and Fiends"
+    },
+    {
+        "name": "Aquan",
+        "full_description": "Commonly spoken by Water Elementals and various water creatures. Derivative of Primordial"
+    },
+    {
+        "name": "Ignan",
+        "full_description": "Commonly spoken by Fire Elementals and various fiery creatures. Derivative of Primordial"
+    },
+    {
+        "name": "Auran",
+        "full_description": "Commonly spoken by Air Elementals and various aerial creatures. Derivative of Primordial"
+    },
+    {
+        "name": "Terran",
+        "full_description": "Commonly spoken by Earth Elementals and various terrian creatures. Derivative of Primordial"
+    },
+    {
+        "name": "Primordial",
+        "full_description": "Commonly spoken by Elementals and folk who are closely related to the Elements such as Genasi"
+    },
+    {
+        "name": "Celestial",
+        "full_description": "Commonly spoken by Celestials, Angelic folk and Aasimaar"
+    },
+    {
+        "name": "Deep Speech",
+        "full_description": "Commonly spoken by Mind Flayers, Beholders and other Abberations"
+    },
+    {
+        "name": "Draconic",
+        "full_description": "Commonly spoken by Dragons, Dragonborn, Kobolds and other Dragonfolk"
+    },
+    {
+        "name": "Hadozee",
+        "full_description": "Commonly spoken by Hadozee. It cannot be written, only spoken."
+    },
+    {
+        "name": "Infernal",
+        "full_description": "Commonly spoken by Devils and other denizens of the Nine Hells"
+    },
+    {
+        "name": "Kothian",
+        "full_description": "Commonly spoken by Minotaurs"
+    },
+    {
+        "name": "Sylvan",
+        "full_description": "Commonly spoken by feyfolk and other fey creatures"
+    },
+    {
+        "name": "Thri-Kreen",
+        "full_description": "Commonly spoken by Thri-Kreen and other insectoids. Cannot be written, only spoken"
+    },
+    {
+        "name": "Undercommon",
+        "full_description": "Used as a replacement for Common but in the Underdark"
+    },
+    {
+        "name": "Quori",
+        "full_description": "Commonly spoken by the Quori, Kalshtar and Inspired"
+    },
+    {
+        "name": "Thieves' Cant",
+        "full_description": "A language made of symbols, shorthand, abbreviation and slang to communicate between thieves and other shady characters"
+    }
+]
