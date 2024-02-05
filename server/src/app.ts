@@ -4,7 +4,7 @@ import express from 'express';
 import {users} from "../db/models/init-models";
 import { sqlconnect } from './db/postgres';
 import { mongoconnect } from './db/mongo';
-import { MongoClient, ServerApiVersion } from 'mongodb';
+import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb';
 const app = express();
 const port = process.env.PORT||3000;
 
@@ -29,6 +29,13 @@ app.post('/character', async (req, res) => {
     const character = req.body;
     collection.insertOne(character);
     res.sendStatus(201);
+})
+
+app.get('/character/:id', async (req, res) => {
+  const collection = await mongoClient.db("heroestavern").collection("characters");
+  const charid = new ObjectId(req.params.id);
+  const character = collection.findOne({_id:charid});
+  res.send(character);
 })
 
 app.get('/users', async (req, res) => {
