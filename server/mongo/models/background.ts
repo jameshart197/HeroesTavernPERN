@@ -6,7 +6,4 @@ export default interface  Background {
     name: string;
     description: string;
     features: Feature[];
-    skillproficiencies: Skill[];
-    languages: Language[]
-    equipment: string;
 }
